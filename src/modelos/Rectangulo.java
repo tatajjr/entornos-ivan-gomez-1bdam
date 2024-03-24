@@ -5,7 +5,7 @@ package modelos;
 /**
  * 
  */
-public class Rectangulo {
+public class Rectangulo extends Figura {
 
     /**
      * Constructor por defecto que establece tanto la altura como la base a 1
@@ -42,7 +42,7 @@ public class Rectangulo {
      */
     public int getBase() {
         // TODO implement here
-        return 0;
+        return base;
     }
 
     /**
@@ -57,7 +57,7 @@ public class Rectangulo {
      */
     public int getAltura() {
         // TODO implement here
-        return 0;
+        return altura;
     }
 
     /**
@@ -80,20 +80,21 @@ public class Rectangulo {
     /**
      * Metodo que obtiene una base y una altura y calcula su correspondiente area.
      */
-    public void calcularArea(int base, int altura) {
+    public int calcularArea() {
     	int area;
     	area=base*altura;
-    	System.out.println(area);       
+    	return area;       
     }
 
     /**
      * Metodo que obtiene una base y una altura y calcula su correspondiente perimetro.
      */
-    public void calcularPerimetro(int base, int altura) {
+    public int calcularPerimetro() {
     	int perimetro;
     	perimetro=(base*2)+(altura*2);
-    	System.out.println(perimetro);
+    	return perimetro;
     	
     }
+	
 
 }

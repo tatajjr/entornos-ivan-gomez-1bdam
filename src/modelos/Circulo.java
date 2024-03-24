@@ -4,7 +4,7 @@ package modelos;
 /**
  * 
  */
-public class Circulo {
+public class Circulo extends Figura {
 
 	/**
      * Constructor predeterminado que establece radio en 1
@@ -31,7 +31,7 @@ public class Circulo {
      */
     public int getRadio() {
         // TODO implement here
-        return 0;
+        return radio;
     }
 
     /**
@@ -53,21 +53,21 @@ public class Circulo {
     /**
      *Metodo que calcula el area del circulo
      */
-    public void calcularArea(int radio) {
+    public int calcularArea() {
         double pi=3.14;
-        double area;
-        area=pi*radio;
-        System.out.println(area);
+        int area;
+        area=(int)pi*radio;
+        return area;
     }
 
     /**
      *Metodo que calcula el perimetro del circulo
      */
-    public void calcularPerimetro(int radio) {
+    public int calcularPerimetro() {
     	double pi=3.14;
-        double perimetro;
-        perimetro=(pi*2)*radio;
-        System.out.println(perimetro);
+        int perimetro;
+        perimetro=(int)(pi*2)*radio;
+        return perimetro;
     }
 
 }

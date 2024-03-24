@@ -1,5 +1,6 @@
 package app;
 
+
 import modelos.Circulo;
 import modelos.Rectangulo;
 
@@ -12,16 +13,15 @@ public class Main {
 
         System.out.println(c1);
         
-        r2.calcularArea();
-        c2.calcularPerimetro();
+        System.out.println(r2.calcularArea());
         
-        r1.getAltura();
+    
+        System.out.println(c2.calcularPerimetro());
         
+        System.out.println(r1.getAltura());
         c2.setRadio(4);
         
         System.out.println(c2.getRadio());
-        
-        
         
     }
 }
